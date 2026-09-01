@@ -23,11 +23,14 @@ const Contact = () => {
       if (res.ok) {
         setSuccess(true);
         setFormData({ name: '', hospital: '', email: '', phone: '', message: '' });
+        setTimeout(() => setSuccess(false), 5000);
       } else {
         setError(true);
+        setTimeout(() => setError(false), 5000);
       }
     } catch (err) {
       setError(true);
+      setTimeout(() => setError(false), 5000);
     } finally {
       setLoading(false);
     }

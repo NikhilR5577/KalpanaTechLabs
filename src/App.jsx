@@ -14,6 +14,7 @@ import ProductPage from './pages/ProductPage';
 import CaseStudyPage from './pages/CaseStudyPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function HomePage() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/case-study" element={<CaseStudyPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
       </div>

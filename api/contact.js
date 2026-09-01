@@ -12,9 +12,11 @@ export default async function handler(req, res) {
       process.env.SUPABASE_URL,
       process.env.SUPABASE_ANON_KEY
     );
-    await supabase.from('inquiries').insert([{ name, hospital, email, phone, message }]);
+    const { error } = await supabase.from('inquiries').insert([{ name, hospital, email, phone, message }]);
+    if (error) throw error;
   } catch (e) {
     console.error('Supabase error:', e);
+    return res.status(500).json({ success: false, error: 'Database error' });
   }
   
   // Send email notification
