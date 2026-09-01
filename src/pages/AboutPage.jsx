@@ -87,9 +87,11 @@ export default function AboutPage() {
           <div className="mb-20">
             <h2 className="text-3xl font-bold mb-10 text-center">Leadership</h2>
             <div className="max-w-2xl mx-auto bg-black/20 backdrop-blur-xl border border-white/[0.08] rounded-2xl p-8 text-center hover:border-white/20 transition-colors">
-              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-3xl font-bold text-white mx-auto mb-6 shadow-lg shadow-blue-500/20">
-                NR
-              </div>
+              <img 
+                src="/nikhil_photo.jpg" 
+                alt="Nikhil Rajput" 
+                className="w-28 h-28 rounded-full object-cover mx-auto mb-6 ring-4 ring-blue-500/30 shadow-lg shadow-blue-500/20"
+              />
               <h3 className="text-2xl font-bold mb-1">Nikhil Rajput</h3>
               <p className="text-blue-400 font-medium mb-2">Founder & CEO</p>
               <p className="text-white/50 text-sm mb-6">Final Year, MANIT Bhopal (NIT)</p>
