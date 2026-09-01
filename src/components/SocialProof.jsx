@@ -10,8 +10,8 @@ const SocialProof = () => {
         <h2 className="text-3xl lg:text-5xl font-bold mb-16 text-center">Trusted by the Government of Madhya Pradesh.</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <img src="/certificate.jpg" alt="Certificate" className="w-full rounded-2xl ring-2 ring-blue-500/30 shadow-xl shadow-blue-500/10" />
-          <img src="/rmo_photo.jpg" alt="RMO Photo" className="w-full rounded-2xl ring-2 ring-blue-500/30 shadow-xl shadow-blue-500/10" />
+          <img src="/certificate.jpg" alt="Certificate" loading="lazy" className="w-full rounded-2xl ring-2 ring-blue-500/30 shadow-xl shadow-blue-500/10" />
+          <img src="/rmo_photo.jpg" alt="RMO Photo" loading="lazy" className="w-full rounded-2xl ring-2 ring-blue-500/30 shadow-xl shadow-blue-500/10" />
         </div>
 
         <div className="mt-12 text-center max-w-2xl mx-auto">

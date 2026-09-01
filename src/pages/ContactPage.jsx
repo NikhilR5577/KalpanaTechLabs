@@ -165,6 +165,7 @@ export default function ContactPage() {
                       type="tel"
                       id="phone"
                       name="phone"
+                      pattern="[0-9\+\-\s\(\)]+"
                       required
                       value={formData.phone}
                       onChange={handleChange}

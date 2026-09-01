@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const Hero = () => {
   const canvasRef = useRef(null);
+  const { ref: sectionRef, inView } = useInView({ threshold: 0 });
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -30,6 +32,10 @@ const Hero = () => {
     }
 
     const draw = () => {
+      if (!inView) {
+        animationFrameId = requestAnimationFrame(draw);
+        return;
+      }
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       for (let i = 0; i < particleCount; i++) {
@@ -56,7 +62,7 @@ const Hero = () => {
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
             const alpha = 1 - distance / connectionDistance;
-            ctx.strokeStyle = `rgba(59, 130, 246, ${alpha})`;
+            ctx.strokeStyle = `rgba(59, 130, 246, ${alpha * 0.5})`;
             ctx.lineWidth = 1;
             ctx.stroke();
           }
@@ -71,16 +77,16 @@ const Hero = () => {
       window.removeEventListener('resize', resize);
       cancelAnimationFrame(animationFrameId);
     };
-  }, []);
+  }, [inView]);
 
   const scrollToContact = () => {
     document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
-      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
-      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+    <div ref={sectionRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <canvas ref={canvasRef} className="absolute inset-0 z-0 pointer-events-none" />
+      <div className="container mx-auto px-6 relative z-10 py-32 lg:py-0 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
         <div>
           <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-blue-400 border border-blue-500/30 rounded-full px-4 py-2 bg-blue-500/10 mb-6">
             [KALPANA TECHLABS]

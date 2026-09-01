@@ -90,10 +90,10 @@ const CaseStudyPage = () => {
           <h2 className="text-3xl font-bold mb-12 text-center">Official Recognition</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div className="rounded-2xl overflow-hidden ring-2 ring-blue-500/30 shadow-xl shadow-blue-500/10 bg-black/40">
-              <img src="/certificate.jpg" alt="Government Certificate of Appreciation" className="w-full h-auto object-cover" />
+              <img src="/certificate.jpg" loading="lazy" alt="Government Certificate of Appreciation" className="w-full h-auto object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden ring-2 ring-blue-500/30 shadow-xl shadow-blue-500/10 bg-black/40">
-              <img src="/rmo_photo.jpg" alt="Photo with RMO" className="w-full h-auto object-cover" />
+              <img src="/rmo_photo.jpg" loading="lazy" alt="Photo with RMO" className="w-full h-auto object-cover" />
             </div>
           </div>
           <div className="bg-blue-900/10 border-l-4 border-blue-500 p-8 rounded-r-2xl max-w-4xl mx-auto">

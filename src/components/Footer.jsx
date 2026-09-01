@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-white/[0.06] mt-10 pt-8 text-center text-white/30 text-sm">
-        © 2026 Kalpana TechLabs. All rights reserved.
+        © {new Date().getFullYear()} Kalpana TechLabs. All rights reserved.
       </div>
     </footer>
   );

@@ -46,7 +46,8 @@ const Navbar = () => {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white/70 hover:text-white transition-colors"
+          className="md:hidden p-2 text-white/70 hover:text-white transition-colors"
+          aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>

@@ -43,24 +43,24 @@ const Contact = () => {
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label className="block text-sm text-white/70 mb-2">Name</label>
-          <input type="text" required value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="Dr. Rajesh Sharma" />
+          <label htmlFor="home-name" className="block text-sm text-white/70 mb-2">Name</label>
+          <input id="home-name" type="text" required value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="Dr. Rajesh Sharma" />
         </div>
         <div>
-          <label className="block text-sm text-white/70 mb-2">Hospital Name</label>
-          <input type="text" required value={formData.hospital} onChange={e => setFormData({...formData, hospital: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="Sanjeevani Multispecialty Hospital" />
+          <label htmlFor="home-hospital" className="block text-sm text-white/70 mb-2">Hospital Name</label>
+          <input id="home-hospital" type="text" required value={formData.hospital} onChange={e => setFormData({...formData, hospital: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="Sanjeevani Multispecialty Hospital" />
         </div>
         <div>
-          <label className="block text-sm text-white/70 mb-2">Email</label>
-          <input type="email" required value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="admin@sanjeevani.in" />
+          <label htmlFor="home-email" className="block text-sm text-white/70 mb-2">Email</label>
+          <input id="home-email" type="email" required value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="admin@sanjeevani.in" />
         </div>
         <div>
-          <label className="block text-sm text-white/70 mb-2">Phone Number</label>
-          <input type="tel" required value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="+91 98765 43210" />
+          <label htmlFor="home-phone" className="block text-sm text-white/70 mb-2">Phone Number</label>
+          <input id="home-phone" type="tel" pattern="[0-9\+\-\s\(\)]+" required value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="+91 98765 43210" />
         </div>
         <div>
-          <label className="block text-sm text-white/70 mb-2">Message</label>
-          <textarea required rows={4} value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="Tell us about your facility..."></textarea>
+          <label htmlFor="home-message" className="block text-sm text-white/70 mb-2">Message</label>
+          <textarea id="home-message" required rows={4} value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="Tell us about your facility..."></textarea>
         </div>
         <button disabled={loading} type="submit" className="w-full bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/25 transition-all flex justify-center items-center gap-2">
           {loading ? (
