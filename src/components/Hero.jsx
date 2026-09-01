@@ -98,6 +98,10 @@ const Hero = () => {
             <a href="https://youtube.com/shorts/uKDTOD5HxyY" target="_blank" rel="noopener noreferrer" className="border border-white/20 hover:border-white/40 text-white px-6 py-3 rounded-xl transition-all inline-flex items-center justify-center">
               Watch Demo &rarr;
             </a>
+            <a href="https://navcare.vercel.app/" target="_blank" rel="noopener noreferrer" className="border border-green-500/40 hover:border-green-400/70 text-green-400 hover:text-green-300 px-6 py-3 rounded-xl transition-all inline-flex items-center justify-center gap-2 bg-green-500/5">
+              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+              Try Live System ↗
+            </a>
           </div>
         </div>
         <div className="flex justify-center">

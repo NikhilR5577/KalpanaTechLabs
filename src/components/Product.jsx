@@ -13,9 +13,14 @@ const Product = () => {
         </div>
         <h2 className="text-4xl lg:text-5xl font-bold mt-4 mb-4">Scan. Speak. Arrive.</h2>
         <img src="/aspatal_logo.jpg" alt="Aspatal Disha Logo" className="h-24 mx-auto my-8 object-contain" />
-        <p className="text-white/55 text-lg max-w-2xl mx-auto text-center mb-12">
+        <p className="text-white/55 text-lg max-w-2xl mx-auto text-center mb-6">
           Aspatal Disha is the flagship product of Kalpana TechLabs. A zero-friction indoor navigation system built for the Indian healthcare environment.
         </p>
+        <a href="https://navcare.vercel.app/" target="_blank" rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 border border-green-500/40 hover:border-green-400/70 text-green-400 hover:text-green-300 px-6 py-3 rounded-xl transition-all bg-green-500/5 mb-12">
+          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+          Live at District Hospital Sagar, M.P. ↗
+        </a>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
