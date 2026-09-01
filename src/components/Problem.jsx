@@ -16,8 +16,8 @@ const Problem = () => {
             <p className="text-white/55 mt-3 text-sm leading-relaxed">Average time a patient spends finding their department in a large hospital</p>
           </div>
           <div className="bg-black/20 backdrop-blur-xl border border-white/[0.08] rounded-2xl p-8 text-center">
-            <h3 className="text-5xl font-bold text-blue-400">500+ patients/day</h3>
-            <p className="text-white/55 mt-3 text-sm leading-relaxed">Currently served at our live deployment — District Hospital Sagar, M.P.</p>
+            <h3 className="text-5xl font-bold text-blue-400">1 Live Site</h3>
+            <p className="text-white/55 mt-3 text-sm leading-relaxed">Already deployed and operational at District Hospital Sagar, M.P. — a government hospital</p>
           </div>
           <div className="bg-black/20 backdrop-blur-xl border border-white/[0.08] rounded-2xl p-8 text-center">
             <h3 className="text-5xl font-bold text-blue-400">0 app downloads</h3>

@@ -16,7 +16,8 @@ const SocialProof = () => {
 
         <div className="mt-12 text-center max-w-2xl mx-auto">
           <p className="italic text-white/70 text-xl">"Mr. Nikhil Rajput demonstrated excellent technical skills, dedication, sincerity and a strong sense of responsibility."</p>
-          <p className="text-white/40 mt-3 text-sm">— Dr. R.S. Jayant, Civil Surgeon, District Hospital Sagar (M.P.)</p>
+          <p className="text-white/40 mt-3 text-sm">— Certificate of Appreciation, District Hospital Sagar, Madhya Pradesh</p>
+          <p className="text-white/30 mt-1 text-xs">Presented by Dr. Abhishek Thakur (RMO) · Signed by the Civil Surgeon</p>
         </div>
       </section>
     </div>
