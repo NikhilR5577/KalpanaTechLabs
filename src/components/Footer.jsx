@@ -15,9 +15,6 @@ const Footer = () => {
           <a href="https://youtube.com/shorts/uKDTOD5HxyY" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white text-sm transition-colors">
             Watch Demo
           </a>
-          <a href="https://github.com/kalpanatechlabs" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white text-sm transition-colors">
-            GitHub
-          </a>
         </div>
       </div>
       <div className="border-t border-white/[0.06] mt-8 pt-8 text-center text-white/30 text-sm">
