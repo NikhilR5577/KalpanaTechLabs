@@ -41,15 +41,15 @@ const Contact = () => {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label className="block text-sm text-white/70 mb-2">Name</label>
-          <input type="text" required value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="Dr. Jane Doe" />
+          <input type="text" required value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="Dr. Rajesh Sharma" />
         </div>
         <div>
           <label className="block text-sm text-white/70 mb-2">Hospital Name</label>
-          <input type="text" required value={formData.hospital} onChange={e => setFormData({...formData, hospital: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="City General Hospital" />
+          <input type="text" required value={formData.hospital} onChange={e => setFormData({...formData, hospital: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="Sanjeevani Multispecialty Hospital" />
         </div>
         <div>
           <label className="block text-sm text-white/70 mb-2">Email</label>
-          <input type="email" required value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="jane@hospital.com" />
+          <input type="email" required value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="admin@sanjeevani.in" />
         </div>
         <div>
           <label className="block text-sm text-white/70 mb-2">Phone Number</label>
