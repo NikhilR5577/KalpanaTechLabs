@@ -32,10 +32,6 @@ const Hero = () => {
     }
 
     const draw = () => {
-      if (!inView) {
-        animationFrameId = requestAnimationFrame(draw);
-        return;
-      }
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       for (let i = 0; i < particleCount; i++) {
@@ -77,7 +73,7 @@ const Hero = () => {
       window.removeEventListener('resize', resize);
       cancelAnimationFrame(animationFrameId);
     };
-  }, [inView]);
+  }, []);
 
   const scrollToContact = () => {
     document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
