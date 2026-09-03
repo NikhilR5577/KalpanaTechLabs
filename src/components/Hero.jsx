@@ -15,8 +15,13 @@ const Hero = () => {
     const connectionDistance = 120;
 
     const resize = () => {
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
+      if (canvas.parentElement) {
+        canvas.width = canvas.parentElement.offsetWidth;
+        canvas.height = canvas.parentElement.offsetHeight;
+      } else {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
     };
     window.addEventListener('resize', resize);
     resize();
@@ -81,7 +86,7 @@ const Hero = () => {
 
   return (
     <div ref={sectionRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <canvas ref={canvasRef} className="absolute inset-0 z-0 pointer-events-none" />
+      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full z-0 pointer-events-none" />
       <div className="container mx-auto px-6 relative z-10 py-32 lg:py-0 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
         <div>
           <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-blue-400 border border-blue-500/30 rounded-full px-4 py-2 bg-blue-500/10 mb-6">
