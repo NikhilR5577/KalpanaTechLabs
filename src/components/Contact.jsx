@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <section id="contact" ref={ref} className={`py-24 px-6 max-w-2xl mx-auto transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
-      <h2 className="text-3xl lg:text-5xl font-bold text-center">Let's upgrade your hospital.</h2>
+      <h2 className="text-3xl lg:text-5xl font-bold text-center">Let's upgrade your facility.</h2>
       <p className="text-white/55 text-center mt-4 mb-10">Fill in the form and we'll get back to you within 24 hours.</p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
@@ -47,8 +47,8 @@ const Contact = () => {
           <input id="home-name" type="text" required value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="Dr. Rajesh Sharma" />
         </div>
         <div>
-          <label htmlFor="home-hospital" className="block text-sm text-white/70 mb-2">Hospital Name</label>
-          <input id="home-hospital" type="text" required value={formData.hospital} onChange={e => setFormData({...formData, hospital: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="Sanjeevani Multispecialty Hospital" />
+          <label htmlFor="home-hospital" className="block text-sm text-white/70 mb-2">Facility Name</label>
+          <input id="home-hospital" type="text" required value={formData.hospital} onChange={e => setFormData({...formData, hospital: e.target.value})} className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full" placeholder="Sanjeevani Hospital / City Mall" />
         </div>
         <div>
           <label htmlFor="home-email" className="block text-sm text-white/70 mb-2">Email</label>

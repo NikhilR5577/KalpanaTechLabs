@@ -114,7 +114,7 @@ const CaseStudyPage = () => {
           ref={ctaRef}
           className={`max-w-4xl mx-auto text-center transform transition-all duration-700 ${ctaInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Want the same results for your hospital?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">Want the same results for your facility?</h2>
           <Link to="/contact" className="inline-block bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/25 transition-all">
             Book a Demo
           </Link>

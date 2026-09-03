@@ -26,10 +26,10 @@ export default function AboutPage() {
         <FadeInSection>
           <div className="text-center mb-20">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-              Building the Navigation Layer for Indian Healthcare
+              Building the Navigation Layer for Indian Facilities
             </h1>
             <p className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto">
-              Kalpana TechLabs is on a mission to ensure no patient ever gets lost inside a hospital again.
+              Kalpana TechLabs is on a mission to ensure no visitor ever gets lost inside a large facility again.
             </p>
           </div>
         </FadeInSection>
@@ -43,10 +43,10 @@ export default function AboutPage() {
                 It started with a simple observation at District Hospital Sagar — patients wandering through crowded corridors, asking staff for directions, losing precious time when they needed care the most.
               </p>
               <p>
-                What if a patient could simply scan a code on the wall and be guided to their destination?
+                We realized this problem isn't unique to hospitals. It exists everywhere: malls, campuses, and airports. What if a visitor could simply scan a code on the wall and be guided to their destination without an app?
               </p>
               <p>
-                That question became Aspatal Disha, and Aspatal Disha became Kalpana TechLabs — a company built to solve indoor navigation for the healthcare facilities that need it most.
+                That question became Aspatal Disha, and Aspatal Disha evolved into Kalpana TechLabs — a company built to solve indoor navigation for the large facilities that need it most.
               </p>
             </div>
           </div>
@@ -61,21 +61,21 @@ export default function AboutPage() {
                 <Lightbulb className="w-10 h-10 text-blue-500 mb-4" />
                 <h3 className="text-xl font-bold mb-3">Innovation</h3>
                 <p className="text-white/70">
-                  We build technology that works in the real world — for real patients, in real Indian hospitals.
+                  We build technology that works in the real world — for real people, in real Indian facilities.
                 </p>
               </div>
               <div className="bg-black/20 backdrop-blur-xl border border-white/[0.08] rounded-2xl p-6 hover:border-white/20 transition-colors">
                 <Heart className="w-10 h-10 text-blue-500 mb-4" />
                 <h3 className="text-xl font-bold mb-3">Accessibility</h3>
                 <p className="text-white/70">
-                  Every patient deserves to navigate their hospital with dignity — regardless of age, language, or ability.
+                  Every visitor deserves to navigate complex facilities with ease — regardless of age, language, or ability.
                 </p>
               </div>
               <div className="bg-black/20 backdrop-blur-xl border border-white/[0.08] rounded-2xl p-6 hover:border-white/20 transition-colors">
                 <Target className="w-10 h-10 text-blue-500 mb-4" />
                 <h3 className="text-xl font-bold mb-3">Impact</h3>
                 <p className="text-white/70">
-                  We measure success not in downloads or signups, but in minutes saved and stress reduced for patients.
+                  We measure success not in downloads, but in minutes saved and stress reduced for visitors.
                 </p>
               </div>
             </div>

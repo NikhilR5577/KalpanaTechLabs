@@ -22,10 +22,10 @@ const ProductPage = () => {
             ASPATAL DISHA
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 max-w-4xl leading-tight">
-            Smart Indoor Navigation for <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Indian Hospitals</span>
+            Smart Indoor Navigation for <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Large Facilities</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mb-12">
-            Aspatal Disha is the flagship product of Kalpana TechLabs. A zero-friction indoor navigation system that helps patients find their way inside large hospitals — no app download required.
+            Aspatal Disha is the flagship product of Kalpana TechLabs. A zero-friction indoor navigation system that helps visitors find their way inside large facilities — no app download required.
           </p>
 
           <div className="relative mx-auto w-full max-w-[280px] aspect-[9/16] rounded-[2.5rem] border-4 border-white/20 shadow-2xl overflow-hidden bg-black flex items-center justify-center">
@@ -58,7 +58,7 @@ const ProductPage = () => {
                 <QrCode className="w-10 h-10 text-blue-400" />
               </div>
               <h3 className="text-xl font-bold mb-3">Scan QR Code</h3>
-              <p className="text-gray-400">Patient scans a QR code placed on the hospital wall near their current location.</p>
+              <p className="text-gray-400">Visitor scans a QR code placed on the facility wall near their current location.</p>
             </div>
 
             {/* Step 2 */}
@@ -67,7 +67,7 @@ const ProductPage = () => {
                 <Mic className="w-10 h-10 text-blue-400" />
               </div>
               <h3 className="text-xl font-bold mb-3">Speak Destination</h3>
-              <p className="text-gray-400">Patient says where they want to go in Hindi or English. No typing needed.</p>
+              <p className="text-gray-400">Visitor says where they want to go in Hindi or English. No typing needed.</p>
             </div>
 
             {/* Step 3 */}
@@ -90,12 +90,12 @@ const ProductPage = () => {
         >
           <h2 className="text-3xl font-bold text-center mb-12">Core Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <FeatureCard icon={Smartphone} title="No App Download" desc="Works instantly in any phone browser. Patients don't need to install anything." />
-            <FeatureCard icon={Mic} title="Hindi & English Voice" desc="Patients speak their destination naturally in their preferred language." />
+            <FeatureCard icon={Smartphone} title="No App Download" desc="Works instantly in any phone browser. Visitors don't need to install anything." />
+            <FeatureCard icon={Mic} title="Hindi & English Voice" desc="Visitors speak their destination naturally in their preferred language." />
             <FeatureCard icon={Accessibility} title="Wheelchair Routes" desc="Accessible paths planned for users with mobility challenges." />
-            <FeatureCard icon={MapPin} title="Real-time 2D Map" desc="Live floor maps with the patient's current location and step-by-step directions." />
-            <FeatureCard icon={LayoutDashboard} title="Admin Dashboard" desc="Hospital administrators can monitor navigation usage and update floor maps." />
-            <FeatureCard icon={Palette} title="Custom Floor Maps" desc="We design custom SVG floor maps tailored to your hospital's exact layout." />
+            <FeatureCard icon={MapPin} title="Real-time 2D Map" desc="Live floor maps with the visitor's current location and step-by-step directions." />
+            <FeatureCard icon={LayoutDashboard} title="Admin Dashboard" desc="Facility administrators can monitor navigation usage and update floor maps." />
+            <FeatureCard icon={Palette} title="Custom Floor Maps" desc="We design custom SVG floor maps tailored to your facility's exact layout." />
           </div>
         </div>
       </section>
@@ -133,7 +133,7 @@ const ProductPage = () => {
           className={`transform transition-all duration-700 ${ctaInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
         >
           <div className="bg-blue-950/30 rounded-3xl p-12 text-center border border-blue-500/20 max-w-4xl mx-auto backdrop-blur-xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Ready to upgrade your hospital?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Ready to upgrade your facility?</h2>
             <Link to="/contact" className="inline-block bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/25 transition-all">
               Book a Demo
             </Link>

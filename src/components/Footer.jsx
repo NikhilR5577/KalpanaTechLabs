@@ -12,7 +12,7 @@ const Footer = () => {
             <span className="text-white font-semibold">Kalpana TechLabs</span>
           </Link>
           <p className="text-white/40 text-sm mt-3 max-w-xs">
-            Building the navigation layer for Indian healthcare. Zero-friction QR-based indoor navigation for hospitals.
+            Building the navigation layer for Indian facilities. Zero-friction QR-based indoor navigation for hospitals, malls, and campuses.
           </p>
         </div>
 

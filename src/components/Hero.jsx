@@ -92,10 +92,10 @@ const Hero = () => {
             [KALPANA TECHLABS]
           </div>
           <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-            The Navigation Layer for Indian Hospitals
+            The Navigation Layer for Large Facilities
           </h1>
           <p className="text-white/55 mt-4 text-lg max-w-lg">
-            We build smart QR-based indoor navigation for hospitals and large facilities. Patients scan a wall, speak their destination, and get instant 2D routing — no app download required.
+            We build smart QR-based indoor navigation for hospitals, malls, and corporate campuses. Visitors scan a wall, speak their destination, and get instant 2D routing — no app download required.
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <button onClick={scrollToContact} className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/25 transition-all">

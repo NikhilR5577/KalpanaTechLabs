@@ -132,7 +132,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="hospital" className="block text-sm font-medium text-white/70 mb-2">Hospital Name</label>
+                  <label htmlFor="hospital" className="block text-sm font-medium text-white/70 mb-2">Facility Name</label>
                   <input
                     type="text"
                     id="hospital"
@@ -140,7 +140,7 @@ export default function ContactPage() {
                     required
                     value={formData.hospital}
                     onChange={handleChange}
-                    placeholder="Sanjeevani Multispecialty Hospital"
+                    placeholder="Sanjeevani Hospital / City Mall"
                     className="bg-white/[0.05] border border-white/[0.10] rounded-xl px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-blue-500/50 w-full transition-colors"
                   />
                 </div>
