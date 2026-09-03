@@ -35,8 +35,8 @@ const Pricing = () => {
 
         <div className="bg-blue-950/40 backdrop-blur-xl border border-blue-500/50 rounded-2xl p-8 ring-1 ring-blue-500/20">
           <div className="text-xs text-blue-400 uppercase tracking-widest mb-4">Full Commercial</div>
-          <div className="text-5xl font-bold text-white">₹1,00,000</div>
-          <p className="text-white/40 mt-1 mb-8">setup + ₹60,000 / year AMC</p>
+          <div className="text-4xl font-bold text-white">Custom Plan</div>
+          <p className="text-white/40 mt-2 mb-8">Pricing depends on facility size & complexity</p>
           <div className="border-t border-white/[0.08] mb-8"></div>
           <ul className="space-y-4">
             {['Complete implementation & deployment', 'Custom SVG floor map design', 'Admin analytics dashboard', 'QR board consultation & printing', 'Mapper.exe session', '1-year priority support'].map((feature, idx) => (
